@@ -27,8 +27,8 @@ class CounterComponent extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
-                  inum--;
                   setState(() {
+                    inum--;
                     debugPrint(inum.toString());
                   });
                 },

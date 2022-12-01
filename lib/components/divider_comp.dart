@@ -7,6 +7,7 @@ class DividerComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double n = 6 / inum;
     return SizedBox(
         height: MediaQuery.of(context).size.height / 4.5,
         width: double.infinity,
@@ -23,7 +24,7 @@ class DividerComponent extends StatelessWidget {
                   decoration: BoxDecoration(
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(8)),
-                  child: Center(child: Text('${6 / inum}'))),
+                  child: Center(child: Text(n.toStringAsFixed(2)))),
             ],
           )
         ]));

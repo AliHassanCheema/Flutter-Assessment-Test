@@ -8,6 +8,7 @@ class MultiplierComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int n = -5 * inum;
     return SizedBox(
         height: MediaQuery.of(context).size.height / 4.5,
         width: double.infinity,
@@ -25,7 +26,7 @@ class MultiplierComponent extends StatelessWidget {
                   decoration: BoxDecoration(
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(8)),
-                  child: Center(child: Text('${-5 * inum}'))),
+                  child: Center(child: Text(n.toStringAsFixed(2)))),
             ],
           )
         ]));
